@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #091921;
+}
+.login-box{
+  position: relative;
+  width: 400px;
+  padding: 40px;
+}
+h2 {
+  text-align: center;
+  color: #0ef;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.input-group{
+  margin-bottom: 20px;
+}
+input {
+  width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #0ef;
+    border-radius: 20px;
+    color: #fff;
+    outline: none;
+    font-size: 20px;
+}
+.login-btn{
+    width: 100%;
+    padding: 10px;
+    background-color: #0ef;
+    border-radius: 20px;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 0 10px #0ef;
+
+}
+.signup-link{
+  margin-top: 20px;
+  text-align: center;
+}
+.forget{
+  color: #0ef;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.signup-link a{
+  color: #0ef;
+    text-decoration: none;
+    font-weight: 600;
+}
+.signup-link a:hover{
+  text-decoration: underline;
+}
+
+.Animation-circle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  border: 30px dashed #0ef;
+  z-index: -1;
+  animation:rotate 20s linear infinite;
+  box-shadow: 0 0 10px #0ef, inset 0 0 10px #0ef;
+
+}
+@keyframes rotate {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+input:focus {
+    box-shadow: 0 0 15px #0ef;
+    transition: 0.3s;
+}
